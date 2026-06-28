@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['images.unsplash.com'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -13,7 +12,7 @@ const nextConfig: NextConfig = {
     ],
   },
   reactStrictMode: true,
-  swcMinify: true,
+  // swcMinify: true, // این خط رو حذف کن (دیگه نیازی نیست)
 };
 
 export default nextConfig;
